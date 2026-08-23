@@ -86,12 +86,15 @@ section h2 {
 }
 
 .skills-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 20px;
 }
 
 .skill-card {
+  flex: 1 1 240px;
+  max-width: 400px;
   background: var(--bg-elevated);
   border: 1px solid var(--border);
   border-radius: var(--radius);
